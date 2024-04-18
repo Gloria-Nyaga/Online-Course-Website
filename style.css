@@ -7,7 +7,7 @@
 }
 
 #hero{
-    color: red;
+    color: rgba(230, 28, 28, 0.733);
 }
 
 body{
@@ -19,19 +19,42 @@ body{
     overflow-x: hidden;
     background: #fff;
     color: #5b5982;
+    font-weight: bold;
+
+
+}
+.hamberger-menu-bar{
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hamberger-menu{
+    display: none;
+}
+
+.Navbar{
+    display: flex;
+    color: rgb(100, 15, 15);
+    align-items: center;
+    color: #5b5982;
+    margin-left: 8%;
+    align-items: center;
+    margin-top: 2%;
 
 }
 
-
-#Navbar ul{
+#navbarlinks ul{
     display: flex;
-    gap: 10%;
-    color: rgb(45, 11, 11);
-    align-items: center;
-    text-decoration:none;
-    color: #5b5982;
-    margin-left: 20%;
-
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #A4B7CF;
 }
 
 #landing{
@@ -48,14 +71,14 @@ button{
     text-decoration: none;
     font-size: 24px;
     border-radius: 40%;
-
 }
+
 #login-button{
     color: red;
     border: solid 1px;
     border-color:red;
     border-radius: 70px;
-    padding: 25px 50px;
+    padding: 20px 60px;
     background-color: transparent;
 }
 
@@ -66,9 +89,9 @@ button{
     background-color: red;
     border-radius: 70px;
     padding: 25px 50px;
-    margin-left: -160px;
-    margin-top: -22px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left: -150px;
+    margin-top: -28px;
+    box-shadow:  inset 1px 1px 10px #000;
 
 }
 
@@ -78,38 +101,41 @@ button{
     background-color: red;
     padding: 25px 50px;
     border-radius: 60px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow:  inset 1px 1px 10px #000;
+    align-items: center;
 }
 
 #input{
     background-color:transparent;
     border-color: black;
     padding: 28px;
-    width: 60%;
-    border-radius:30px ;
+    width: 75%;
+    border-radius:70px ;
     font-size: 24px;
 }
 
 .Landing-page-text{
     display: flex;
     flex-direction: row;
-    gap: 8%;
+    gap: 15%;
     
 }
 
 #man-in-redcape{
     object-fit: cover;
-    width: 140%;
+    width: 130%;
     height: 100%;
     border-radius: 50%;
 
 }
 
 #Subscription-text{
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content:left;
     padding-top: 5%;
+    justify-content: space-between;
 
 }
 
@@ -126,65 +152,53 @@ button{
 }
 
 .hamburger-button {
-    background-color: #333;
-    color: white;
+    background-color:transparent;
+    color: #5b5982;;
     padding: 15px;
-    font-size: 24px;
+    font-size: 50px;
     cursor: pointer;
- }
-
- .nav-links {
-    display: none;
-    background-color: #333;
-    color: white;
+    margin-left: 1600%;
+    align-items: center;
  }
 
 
 
-@media only screen and (min-width:400px) and (max-width:900px){
+
+@media only screen and (min-width:375px) and (max-width:435px){
     .Header{
         display: block;
+        margin-bottom: 5%;
     }
 
     body{
-        font-size: 20px;
+        font-size: 36px;
+        font-weight: 400px;
         font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         margin-left: 6%;
         margin-right: 5%;
         overflow-x: hidden;
         background: #fff;
         color: #5b5982;
+        font-weight: bold;
+
     }
 
-    #Navbar ul{
-        display:block;
-        color: rgb(45, 11, 11);
-        text-decoration:none;
+    .Navbar{
+        display: block;
+        color: rgb(100, 15, 15);
+        align-items: center;
         color: #5b5982;
-    }
-
-    #Navbar{
-        display:block;
-    }
-
-    button{
-        background-color: rgb(31, 154, 158);
-        border: none;
-        color: white;
-        padding: 20px 50px;
-        text-decoration: none;
-        font-size: 24px;
-        border-radius: 40%;
+        margin-left: 1%;
+        align-items: center;
+        margin-top: 2%;
     
     }
 
-    #login-button{
-        color: red;
-        border: solid 1px;
-        border-color:red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        background-color: transparent;
+    #navbarlinks ul{
+        color: #A4B7CF;
+        display: block;
+        gap: 5%;
+        justify-content: space-around;
     }
 
     #input{
@@ -192,93 +206,8 @@ button{
         border-color: black;
         padding: 28px;
         width: 60%;
-        border-radius:30px ;
-        font-size: 20px;
-    }
-
-    .Landing-page-text{
-        display: block;
-
-    }
-
-    #man-in-redcape{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        margin-top: 5%;
-    
-    }
-
-    #icons{
-        color: grey;
-        display: block;
-        align-items: center;
-        padding-top: 10%;
-        padding-left: 8%;
-    
-    }
-
-    #Subscription-text{
-        display: block;
-    }
-
-    #explore-now-button{
-        background-color: red;
-        border-radius: 70px;
-        padding: 25px 30px;
-        margin-left: -60px;
-        margin-top: -25px;
-    }
-    
-    #join-button{
-        color:white;
-        border-color:red;
-        background-color: red;
-        padding: 15px 50px;
-        border-radius: 60px;
-        display: block;
-        margin-top: 5%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-    
-    #buttons{
-        display: block;
-
-    }
-
-    
-}
-
-
-@media only screen and (min-width:300px) and (max-width:500px){
-    .Header{
-        display: block;
-        flex-direction: column;
-    }
-
-    body{
-        font-size: 30px;
-        font-weight: 400px;
-        font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-left: 6%;
-        margin-right: 5%;
-        overflow-x: hidden;
-        background: #fff;
-        color: #5b5982;
-    }
-
-    #Navbar ul{
-        display:block;
-        color: rgb(45, 11, 11);
-        text-decoration:none;
-        color: #5b5982;
-        flex-direction: column;
-    }
-
-    #Navbar{
-        display:block;
-        flex-direction: column;
+        border-radius:80px ;
+        font-size: 24px;
     }
 
     button{
@@ -286,674 +215,162 @@ button{
         border: none;
         color: white;
         padding: 20px 50px;
+        text-align: center;
         text-decoration: none;
         font-size: 24px;
         border-radius: 40%;
-    
-    }
-
-    #login-button{
-        color: red;
-        border: solid 1px;
-        border-color:red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        background-color: transparent;
-    }
-
-    #input{
-        background-color:transparent;
-        border-color: black;
-        padding: 28px;
-        width: 60%;
-        border-radius:30px ;
-        font-size: 20px;
-    }
-
-    .Landing-page-text{
-        display: block;
-
-    }
-
-    #man-in-redcape{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        margin-top: 5%;
-    
     }
 
     #icons{
         color: grey;
         display: block;
+        gap: 5%;
         align-items: center;
         padding-top: 10%;
         padding-left: 8%;
-    
-    }
-
-    #Subscription-text{
-        display: block;
-    }
-
-    #explore-now-button{
-        background-color: red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        margin-left: -160px;
-        margin-top: -22px;
-    }
-    
-    #join-button{
-        color:white;
-        border-color:red;
-        background-color: red;
-        padding: 25px 50px;
-        border-radius: 60px;
-        display: block;
-        margin-top: 5%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-    
-    #buttons{
-        display: block;
-
-    }
-
-    
-}
-
-@media only screen and (min-width:350px) and (max-width:800px){
-    .Header{
-        display: block;
-        flex-direction: column;
-    }
-
-    body{
-        font-size: 30px;
-        font-weight: 400px;
-        font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-left: 6%;
-        margin-right: 5%;
-        overflow-x: hidden;
-        background: #fff;
-        color: #5b5982;
-    }
-
-    #Navbar ul{
-        display:block;
-        color: rgb(45, 11, 11);
-        text-decoration:none;
-        color: #5b5982;
-        flex-direction: column;
-    }
-
-    #Navbar{
-        display:block;
-        flex-direction: column;
-    }
-
-    button{
-        background-color: rgb(31, 154, 158);
-        border: none;
-        color: white;
-        padding: 20px 50px;
-        text-decoration: none;
-        font-size: 24px;
-        border-radius: 40%;
-    
-    }
-
-    #login-button{
-        color: red;
-        border: solid 1px;
-        border-color:red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        background-color: transparent;
-    }
-
-    #input{
-        background-color:transparent;
-        border-color: black;
-        padding: 28px;
-        width: 60%;
-        border-radius:30px ;
-        font-size: 20px;
     }
 
     .Landing-page-text{
         display: block;
-
-    }
-
-    #man-in-redcape{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        margin-top: 5%;
-    
-    }
-
-    #icons{
-        color: grey;
-        display: block;
-        align-items: center;
-        padding-top: 10%;
-        padding-left: 8%;
-    
-    }
-
-    #Subscription-text{
-        display: block;
-    }
-
-    #explore-now-button{
-        background-color: red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        margin-left: -160px;
-        margin-top: -100%;
-    }
-    
-    #join-button{
-        color:white;
-        border-color:red;
-        background-color: red;
-        padding: 25px 50px;
-        border-radius: 60px;
-        display: block;
-        margin-top: 5%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-    
-    #buttons{
-        display: block;
-
-    }
-
-    
-}
-
-
-@media only screen and (min-width:800px) and (max-width:1200px){
-    .Header{
-        display: block;
-    }
-
-    body{
-        font-size: 30px;
-        font-weight: 400px;
-        font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-left: 6%;
-        margin-right: 5%;
-        overflow-x: hidden;
-        background: #fff;
-        color: #5b5982;
-    }
-
-    #Navbar ul{
-        display:block;
-        color: rgb(45, 11, 11);
-        text-decoration:none;
-        color: #5b5982;
-    }
-
-    #Navbar{
-        display:block;
-        margin-right: 50%;
-       row-gap: 20%;
-    }
-
-    button{
-        background-color: rgb(31, 154, 158);
-        border: none;
-        color: white;
-        padding: 20px 50px;
-        text-decoration: none;
-        font-size: 24px;
-        border-radius: 40%;
-    
-    }
-
-    #login-button{
-        color: red;
-        border: solid 1px;
-        border-color:red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        background-color: transparent;
-    }
-
-    #input{
-        background-color:transparent;
-        border-color: black;
-        padding: 28px;
-        width: 50%;
-        border-radius:30px ;
-        font-size: 20px;
-    }
-
-    .Landing-page-text{
-        display: block;
-
-    }
-
-    #man-in-redcape{
-        object-fit: cover;
-        width: 70%;
-        height: 100%;
-        border-radius: 50%;
-        margin-top: 5%;
-        margin-right: 10%;
-    
-    }
-
-    #icons{
-        color: grey;
-        display: block;
-        align-items: center;
-        padding-top: 10%;
-        padding-left: 8%;
-    
-    }
-
-    #Subscription-text{
-        display: block;
-    }
-
-    #explore-now-button{
-        background-color: red;
-        border-radius: 70px;
-        padding: 25px 30px;
-        margin-left: -140px;
-        margin-top: -25px;
-    }
-    
-    #join-button{
-        color:white;
-        border-color:red;
-        background-color: red;
-        padding: 15px 50px;
-        border-radius: 60px;
-        display: block;
-        margin-top: 5%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-    
-    #buttons{
-        display: block;
-
-    }
-
-    
-}
-
-
-@media only screen and (min-width:750px) and (max-width:1050px){
-    .Header{
-        display: block;
-    }
-
-    body{
-        font-size: 48px;
-        font-weight: 400px;
-        font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-left: 6%;
-        margin-right: 5%;
-        overflow-x: hidden;
-        background: #fff;
-        color: #5b5982;
-    }
-
-    #Navbar ul{
-        color: rgb(45, 11, 11);
-        text-decoration:none;
-        color: #5b5982;
-        display: grid;
-        grid-template-columns: 10% 10%;
-        grid-template-columns: 1fr 1fr;
         gap: 10%;
-    }
-
-    #Navbar{
-        display: grid;
-        grid-template-columns: 10% 10%;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    button{
-        background-color: rgb(31, 154, 158);
-        border: none;
-        color: white;
-        padding: 20px 50px;
-        text-decoration: none;
-        font-size: 40px;
-        border-radius: 40%;
-    
-    }
-
-    #login-button{
-        color: red;
-        border: solid 1px;
-        border-color:red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        background-color: transparent;
-    }
-
-    #input{
-        background-color:transparent;
-        border-color: black;
-        padding: 28px;
-        width: 50%;
-        border-radius:30px ;
-        font-size: 30px;
-    }
-
-    .Landing-page-text{
-        display: block;
-
-    }
-
-    #man-in-redcape{
-        object-fit: cover;
-        width: 160%;
-        height: 100%;
-        border-radius: 50%;
-        margin-top: 5%;
-        margin-right: 10%;
-    
-    }
-
-    #icons{
-        color: grey;
-        padding-top: 10%;
-        align-items: center;
-    
-    
-    }
-
-    #Subscription-text{
-        display: block;
-    }
-
-    #explore-now-button{
-        background-color: red;
-        border-radius: 70px;
-        padding: 25px 30px;
-        margin-left: -60px;
-        margin-top: -25px;
-    }
-    
-    #join-button{
-        color:white;
-        border-color:red;
-        background-color: red;
-        padding: 15px 50px;
-        border-radius: 60px;
-        display: block;
-        margin-top: 5%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-
-
-    
-}
-
-
-@media only screen and (min-width:260px) and (max-width:700px){
-    .Header{
-        display: block;
-    }
-
-    body{
-        font-size: 48px;
-        font-weight: 400px;
-        font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-left: 6%;
-        margin-right: 5%;
-        overflow-x: hidden;
-        background: #fff;
-        color: #5b5982;
-    }
-
-    #Navbar ul{
-        color: rgb(45, 11, 11);
-        text-decoration:none;
-        color: #5b5982;
-        display: grid;
-        grid-template-columns: 20% 20%;
-        grid-template-columns: 1fr 1fr;
-        gap: 20%;
-        margin-right: 60%;
-    }
-
-    #Navbar{
-        display: grid;
-        grid-template-columns: 20% 20%;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    button{
-        background-color: rgb(31, 154, 158);
-        border: none;
-        color: white;
-        padding: 20px 50px;
-        text-decoration: none;
-        font-size: 40px;
-        border-radius: 40%;
-    
-    }
-
-    #login-button{
-        color: red;
-        border: solid 1px;
-        border-color:red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        background-color: transparent;
-    }
-
-    #input{
-        background-color:transparent;
-        border-color: black;
-        padding: 28px;
-        width: 160%;
-        border-radius:30px ;
-        font-size: 30px;
-    }
-
-    .Landing-page-text{
-        display: block;
-
-    }
-
-    #man-in-redcape{
-        object-fit: cover;
-        width: 250%;
-        height: 300%;
-        border-radius: 50%;
-        margin-top: 5%;
-    
-    }
-
-    #icons{
-        color: grey;
-        padding-top: 10%;
-        display: block;
-    
-    
-    }
-
-    #Subscription-text{
-        display: block;
-        align-items: center;
-    }
-
-    #explore-now-button{
-        background-color: red;
-        border-radius: 70px;
-        padding: 15px 50px;
-        margin-left: -10px;
-        margin-top: -25px;
-    }
-    
-    #join-button{
-        color:white;
-        border-color:red;
-        background-color: red;
-        padding: 15px 50px;
-        border-radius: 60px;
-        display: block;
-        margin-top: 5%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-
-
-    
-}
-
-
-@media only screen and (min-width:700px) and (max-width:1300px){
-    .Header{
-        display: block;
-        align-items: center;
-
-    }
-
-    body{
-        font-size: 48px;
-        font-weight: 400px;
-        font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-left: 6%;
-        margin-right: 5%;
-        overflow-x: hidden;
-        background: #fff;
-        color: #5b5982;
-    }
-
-    #Navbar ul{
-        color: rgb(45, 11, 11);
-        text-decoration:none;
-        color: #5b5982;
-        display: grid;
-        grid-template-columns: 20% 20% ;
-        grid-template-columns: 1fr 1fr ;
-        gap: 30%;
-
-    }
-
-    #Navbar{
-        display: grid;
-        grid-template-columns: 20% 20%;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    button{
-        background-color: rgb(31, 154, 158);
-        border: none;
-        color: white;
-        padding: 20px 50px;
-        text-decoration: none;
-        font-size: 40px;
-        border-radius: 40%;
-    
-    }
-
-    #login-button{
-        color: red;
-        border: solid 1px;
-        border-color:red;
-        border-radius: 70px;
-        padding: 25px 50px;
-        background-color: transparent;
-    }
-
-    #input{
-        background-color:transparent;
-        border-color: black;
-        padding: 28px;
-        width: 60%;
-        border-radius:30px ;
-        font-size: 30px;
-    }
-
-    .Landing-page-text{
-        display: block;
-
+        
     }
 
     #man-in-redcape{
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        height: 110%;
         border-radius: 50%;
-        margin-top: 5%;
     
-    }
-
-    #icons{
-        color: grey;
-        padding-top: 10%;
-        display: block;
-    
-    }
-
-    #Subscription-text{
-        display: block;
-        align-items: center;
     }
 
     #explore-now-button{
+        color:white;
+        border: solid 1px;
+        border-color:red;
         background-color: red;
         border-radius: 70px;
-        padding: 15px 50px;
-        margin-left: -160px;
-        margin-top: -25px;
-    }
+        padding: 25px 30px;
+        margin-left: -150px;
+        margin-top: -28px;
+        box-shadow:  inset 1px 1px 10px #000;
     
+    }
+
     #join-button{
         color:white;
         border-color:red;
         background-color: red;
-        padding: 15px 50px;
+        padding: 25px 50px;
         border-radius: 60px;
-        display: block;
+        box-shadow:  inset 1px 1px 10px #000;
+        align-items: center;
         margin-top: 5%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
-
-
-
-    
 }
 
 
+@media only screen and (min-width:360px) and (max-width:364px){
+    .Header{
+        display: block;
+        margin-bottom: 5%; 
+    }
+
+    body{
+        font-size: 44px;
+        font-weight: 400px;
+        font-family:"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-left: 10%;
+        margin-right: 5%;
+        overflow-x: hidden;
+        background: #fff;
+        color: #5b5982;
+        font-weight: bold;
+        background-color: #8987af;
 
 
+    }  
+    
+    .Navbar{
+        display: block;
+        color: rgb(100, 15, 15);
+        align-items: center;
+        color: #5b5982;
+        margin-left: 1%;
+        margin-top: 2%;
+    
+    }
+
+    #navbarlinks ul{
+        color: #A4B7CF;
+        display: block;
+        gap: 10%;
+        justify-content: space-around;
+    }
+
+    #input{
+        background-color:transparent;
+        border-color: black;
+        padding: 28px;
+        width: 65%;
+        border-radius:80px ;
+        font-size: 24px;
+    }
+
+    #explore-now-button{
+        color:white;
+        border: solid 1px;
+        border-color:red;
+        background-color: red;
+        border-radius: 70px;
+        padding: 25px 20px;
+        margin-left: -150px;
+        margin-top: -28px;
+        box-shadow:  inset 1px 1px 10px #000;
+    
+    }
+
+    #join-button{
+        color:white;
+        border-color:red;
+        background-color: red;
+        padding: 25px 50px;
+        border-radius: 60px;
+        box-shadow:  inset 1px 1px 10px #000;
+        align-items: center;
+        margin-top: 5%;
+    }
 
 
+    .Landing-page-text{
+        display: block;
+        gap: 10%;
+        
+    }
 
+    #man-in-redcape{
+        object-fit: cover;
+        width: 140%;
+        height: 180%;
+        border-radius: 50%;
+    }
+
+    #icons{
+        color: grey;
+        display: block;
+        gap: 5%;
+        align-items: center;
+        padding-top: 10%;
+        padding-left: 8%;
+    }
 
     
-
-
-
-
-
     
+}
+
+@media only screen and (min-width:280px) and (max-width:359px){
 
 
 
 
-
-    
-
-
-
-
-
-    
+}
