@@ -8,44 +8,47 @@
     <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div id="Header">
+    <div class="Header">
         <div>
-           <h2><i class="fa-solid fa-graduation-cap"></i>SKILL<a class="hero">HERO</a></h2>
+           <p><i class="fa-solid fa-graduation-cap"></i>SKILL<a id="hero">HERO</a></p>
         </div>
-        <div class="Navbar">
-            <p> &#803;Home</p>
-            <p>Programs</p>
-            <p>AboutUs</p>
-            <p>Contact</p>
-            <div class="bbutton">
-                <button class="login">Login</button>
-                <br><br>
-                <button class="Join">Join Now</button>
-            </div>
+        
+        <div id="Navbar">
+            <button class="hamburger-button"> ☰ </button>
+            <div class="nav-links">
+                <ul>
+                    <a style="text-decoration:none" href=" " id="hero">&#8226;Home</a>
+                    <a style="text-decoration:none" href="" >Programs</a>
+                    <a style="text-decoration:none" href=" " >AboutUs</a>
+                    <a style="text-decoration:none" href=" ">Contact</a>
+                    <a style="text-decoration:none" href=" "><button id="login-button">Login</button></a>
+                    <a style="text-decoration:none" href=" "><button id="join-button">JoinNow</button></a>
+    
+                </ul>
+            </div>    
 
         </div>    
     </div>
-    <div id="Upgrade">
+
+    <div class="Landing-page-text">
         <div>
-            <h1> Upgrade Your</h1>
-            <h1>Skills Up To</h1>
-            <h1><a class="hero">Superhero</a> Level</h1>
+            <h1 id="landing"> Upgrade Your</h1>
+            <h1 id="landing">Skills Up To</h1>
+            <h1 id="landing"><a id="hero">Superhero</a> Level</h1>
             <p>Don't let your strength be defeated,</p>
             <p>Explore the hidden skills within you!</p>
             <div>
-                <input type="text" name="text" placeholder="What skills are you looking for?" class="input">
+                <input type="text" name="text" placeholder="What skills are you looking for?" id="input">
     
-                <button class="explore">Explore Now</button>
+                <button id="explore-now-button">Explore Now</button>
             </div>
-            <div class="Subscription">
-                <div class="checks">
+            <div id="Subscription-text">
                     <p> &check;Monthly subscription</p>
                     <p> &check;30 day money back guarantee</p>
-                </div>
             </div>
         </div>
         <div>
-            <img src="images/man in redcape.jpeg" alt="man in red cape" class="redcape" width="280px" height="280px">
+            <img src="images/man in redcape.jpeg" alt="man in red cape" id="man-in-redcape">
         </div>
     </div>
     <div id="icons">
@@ -54,8 +57,6 @@
         <h2>Medium</h2>
         <h2><img src="images/udemy.png"> Udemy</h2>
         <h2><i class="fa-brands fa-slack"></i>Slack</h2>
-
-
     </div>
     
 </body>
